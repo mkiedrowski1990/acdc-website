@@ -1,1 +1,200 @@
-<!-- Strona AC/DC - w budowie -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fanowska strona zespołu AC/DC">
+    <title>AC/DC – oficjalna strona fanowska</title>
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts - czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Nasz plik CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAGŁÓWEK STRONY -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">O zespole</a></li>
+                <li><a href="#members">Członkowie</a></li>
+                <li><a href="#discography">Dyskografia</a></li>
+                <li><a href="#trivia">Ciekawostki</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>AC/DC</h1>
+            <p class="tagline">High Voltage Rock 'n' Roll since 1973</p>
+        </div>
+    </header>
+
+    <!-- GŁÓWNA TREŚĆ STRONY -->
+    <main>
+
+        <!-- SEKCJA: O zespole -->
+        <section id="about">
+            <h2>O zespole</h2>
+            <p>
+                AC/DC to australijski zespół rockowy założony w Sydney w 1973 roku
+                przez braci Angusa i Malcolma Youngów. Uznawany za jeden z
+                najważniejszych zespołów w historii hard rocka i rock and rolla.
+            </p>
+            <p>
+                Ich charakterystyczne brzmienie, oparte na mocnych riffach gitarowych
+                i energetycznych występach na żywo, zdobyło miliony fanów na całym świecie.
+                Sprzedali ponad 200 milionów płyt, co czyni ich jednym z
+                najlepiej sprzedających się wykonawców wszech czasów.
+            </p>
+        </section>
+
+        <!-- SEKCJA: Członkowie -->
+        <section id="members">
+            <h2>Członkowie zespołu</h2>
+            <div class="members-grid">
+
+                <article class="member-card">
+                    <i class="fa-solid fa-guitar"></i>
+                    <h3>Angus Young</h3>
+                    <p>Gitara prowadząca</p>
+                    <p>Ikona rock and rolla, znany ze scenicznych popisów w szkolnym mundurku.</p>
+                </article>
+
+                <article class="member-card">
+                    <i class="fa-solid fa-guitar"></i>
+                    <h3>Malcolm Young</h3>
+                    <p>Gitara rytmiczna</p>
+                    <p>Współzałożyciel i muzyczny mózg zespołu. Tworzył z bratem przez ponad 40 lat.</p>
+                </article>
+
+                <article class="member-card">
+                    <i class="fa-solid fa-microphone"></i>
+                    <h3>Brian Johnson</h3>
+                    <p>Wokal</p>
+                    <p>Dołączył do zespołu w 1980 roku po śmierci Bona Scotta. Autor kultowych tekstów.</p>
+                </article>
+
+                <article class="member-card">
+                    <i class="fa-solid fa-drum"></i>
+                    <h3>Phil Rudd</h3>
+                    <p>Perkusja</p>
+                    <p>Jeden z najbardziej rozpoznawalnych perkusistów rockowych na świecie.</p>
+                </article>
+
+                <article class="member-card">
+                    <i class="fa-solid fa-bass-guitar"></i>
+                    <h3>Cliff Williams</h3>
+                    <p>Gitara basowa</p>
+                    <p>Solidny fundament brzmieniowy zespołu przez ponad 40 lat.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEKCJA: Dyskografia -->
+        <section id="discography">
+            <h2>Wybrana dyskografia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rok</th>
+                        <th>Album</th>
+                        <th>Wytwórnia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1975</td>
+                        <td>High Voltage</td>
+                        <td>Albert Productions</td>
+                    </tr>
+                    <tr>
+                        <td>1979</td>
+                        <td>Highway to Hell</td>
+                        <td>Atlantic Records</td>
+                    </tr>
+                    <tr>
+                        <td>1980</td>
+                        <td>Back in Black</td>
+                        <td>Atlantic Records</td>
+                    </tr>
+                    <tr>
+                        <td>1990</td>
+                        <td>The Razors Edge</td>
+                        <td>ATCO Records</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Black Ice</td>
+                        <td>Columbia Records</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Power Up</td>
+                        <td>Columbia Records</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SEKCJA: Ciekawostki z API -->
+        <section id="trivia">
+            <h2>Ciekawostka dnia</h2>
+            <div id="trivia-container">
+                <p id="trivia-text">Ładowanie ciekawostki...</p>
+                <button id="trivia-btn">
+                    <i class="fa-solid fa-bolt"></i> Losuj ciekawostkę
+                </button>
+            </div>
+        </section>
+
+        <!-- SEKCJA: Kontakt -->
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" placeholder="Twoje imię">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="twoj@email.com">
+
+                <label for="message">Wiadomość</label>
+                <textarea id="message" name="message" rows="5" placeholder="Napisz coś..."></textarea>
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i> Wyślij wiadomość
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- STOPKA -->
+    <footer>
+        <p>
+            <i class="fa-solid fa-bolt"></i>
+            AC/DC Fan Website &copy; 2026 – Strona stworzona w celach edukacyjnych - Mateusz Kiedrowski, nr albumu: 89606
+            <i class="fa-solid fa-bolt"></i>
+        </p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </footer>
+
+    <!-- plik JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
