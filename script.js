@@ -1,22 +1,26 @@
 const triviaBtn = document.getElementById('trivia-btn');
 const triviaText = document.getElementById('trivia-text');
 
-async function fetchTrivia() {
+const triviaAuthor = document.getElementById('trivia-author');
+
+async function fetchQuote() {
     triviaBtn.textContent = 'Ładowanie...';
     triviaBtn.disabled = true;
 
     try {
-        const response = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random?language=en');
+        const response = await fetch('https://api.quotable.io/random?tags=music');
         const data = await response.json();
-        triviaText.textContent = data.text;
+        triviaText.textContent = data.content;
+        triviaAuthor.textContent = '— ' + data.author;
     } catch (error) {
-        triviaText.textContent = 'Nie udało się pobrać ciekawostki. Spróbuj ponownie!';
+        triviaText.textContent = 'Nie udało się pobrać cytatu. Spróbuj ponownie!';
+        triviaAuthor.textContent = '';
     }
 
-    triviaBtn.textContent = 'Losuj ciekawostkę';
+    triviaBtn.textContent = 'Losuj cytat';
     triviaBtn.disabled = false;
 }
 
-triviaBtn.addEventListener('click', fetchTrivia);
+triviaBtn.addEventListener('click', fetchQuote);
 
-fetchTrivia();
+fetchQuote();

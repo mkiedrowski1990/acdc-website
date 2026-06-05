@@ -30,7 +30,7 @@ body {
 
 header {
     background-color: var(--color-surface);
-    border-bottom: 3px solid var(color-accent);
+    border-bottom: 3px solid var(--color-accent);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -224,6 +224,14 @@ tbody td:first-child {
     color: var(--color-text);
     line-height: 1.8;
     font-style: italic;
+}
+
+#trivia-author {
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 #trivia-btn {
