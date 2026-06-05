@@ -90,3 +90,16 @@ async function startClock() {
 }
 
 startClock();
+
+const hamburger = document.getElementById('hamburger');
+const navUl = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', function() {
+    navUl.classList.toggle('open');
+});
+
+navUl.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        navUl.classList.remove('open');
+    });
+});
