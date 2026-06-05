@@ -4,7 +4,7 @@
 Strona fanowska zespołu AC/DC stworzona jako projekt zaliczeniowy
 z przedmiotu Projektowanie Stron WWW.
 Strona prezentuje historię zespołu, członków, dyskografię oraz
-losowe ciekawostki pobierane na żywo z zewnętrznego API.
+losowe cytaty z zewnętrznego API.
 
 ## Technologie
 - HTML5 (znaczniki semantyczne)
@@ -14,9 +14,8 @@ losowe ciekawostki pobierane na żywo z zewnętrznego API.
 - JavaScript (Web API)
 
 ## API
-Projekt wykorzystuje [Useless Facts API](https://uselessfacts.jsph.pl/)
-— darmowe API zwracające losowe ciekawostki.
-Nie wymaga klucza ani rejestracji.
+- [MusicBrainz API](https://musicbrainz.org/) — dane o zespole AC/DC (rok założenia, kraj, status)
+- [Time.Now API](https://time.now/developer) — aktualny czas w strefach czasowych Warszawa, Londyn, Nowy Jork, Sydney
 
 ## Postęp prac
 - [x] Etap 1: Inicjalizacja projektu i konfiguracja Git

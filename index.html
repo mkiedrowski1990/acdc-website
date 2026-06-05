@@ -24,6 +24,12 @@
     <!-- NAGŁÓWEK STRONY -->
     <header>
         <nav>
+            <div id="world-clock">
+                <span class="clock-item" id="clock-warsaw">🇵🇱 Warszawa: --:--:--</span>
+                <span class="clock-item" id="clock-london">🇬🇧 Londyn: --:--:--</span>
+                <span class="clock-item" id="clock-newyork">🇺🇸 Nowy Jork: --:--:--</span>
+                <span class="clock-item" id="clock-sydney">🇦🇺 Sydney: --:--:--</span>
+            </div>
             <ul>
                 <li><a href="#about">O zespole</a></li>
                 <li><a href="#members">Członkowie</a></li>
@@ -31,6 +37,7 @@
                 <li><a href="#trivia">Ciekawostki</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
+            
         </nav>
         <div class="hero">
             <h1>AC/DC</h1>
@@ -148,12 +155,12 @@
 
         <!-- SEKCJA: Cytaty z API -->
         <section id="trivia">
-            <h2>Cytat o rocku</h2>
+            <h2>Informacje o zespole</h2>
             <div id="trivia-container">
                 <p id="trivia-text">Ładowanie cytatu...</p>
                 <p id="trivia-author"></p>
                 <button id="trivia-btn">
-                    <i class="fa-solid fa-bolt"></i> Losuj cytat
+                    <i class="fa-solid fa-bolt"></i> Odśwież dane
                 </button>
             </div>
         </section>
