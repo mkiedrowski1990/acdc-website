@@ -335,3 +335,78 @@ footer p i {
     color: var(--color-accent);
     transform: translateY(-4px);
 }
+
+@media (max-width: 768px) {
+
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 0.8rem;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    tbody td {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        min-height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero .tagline {
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+    }
+
+    .member-card {
+        flex: 1 1 100%;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    thead th {
+        padding: 0.7rem 0.8rem;
+    }
+
+    tbody td {
+        padding: 0.7rem 0.8rem;
+    }
+
+    form button,
+    #trivia-btn {
+        align-self: stretch;
+        text-align: center;
+    }
+}
