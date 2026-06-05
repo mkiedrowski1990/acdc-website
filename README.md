@@ -3,6 +3,8 @@
 ## Opis projektu
 Strona fanowska zespołu AC/DC stworzona jako projekt zaliczeniowy
 z przedmiotu Projektowanie Stron WWW.
+Strona prezentuje historię zespołu, członków, dyskografię oraz
+losowe ciekawostki pobierane na żywo z zewnętrznego API.
 
 ## Technologie
 - HTML5 (znaczniki semantyczne)
@@ -11,13 +13,18 @@ z przedmiotu Projektowanie Stron WWW.
 - Font Awesome
 - JavaScript (Web API)
 
+## API
+Projekt wykorzystuje [Useless Facts API](https://uselessfacts.jsph.pl/)
+— darmowe API zwracające losowe ciekawostki.
+Nie wymaga klucza ani rejestracji.
+
 ## Postęp prac
 - [x] Etap 1: Inicjalizacja projektu i konfiguracja Git
-- [] Etap 2: Struktura HTML
-- [ ] Etap 3: Style CSS
-- [ ] Etap 4: Flexbox
-- [ ] Etap 5: Responsywność
-- [ ] Etap 6: JavaScript + API
+- [X] Etap 2: Struktura HTML
+- [X] Etap 3: Style CSS
+- [X] Etap 4: Flexbox
+- [X] Etap 5: Responsywność
+- [X] Etap 6: JavaScript + API
 
 ## Notatki
 
