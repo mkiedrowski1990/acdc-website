@@ -27,7 +27,6 @@ body {
 }
 
 /* HEADER */
-
 header {
     background-color: var(--color-surface);
     border-bottom: 3px solid var(--color-accent);
@@ -36,7 +35,7 @@ header {
     z-index: 100;
 }
 
-/* ===== ZEGAR ===== */
+/* ZEGAR */
 #world-clock {
     display: flex;
     justify-content: center;
@@ -87,15 +86,17 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 10vh;
+    min-height: 17vh;
     text-align: center;
-    background-color: var(--color-bg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     border-bottom: 1px solid var(--color-surface);
 }
 
 .hero h1 {
     font-family: var(--font-heading);
-    font-size: 8rem;
+    font-size: 5rem;
     color: var(--color-accent);
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -139,6 +140,22 @@ section h2::after {
     height: 3px;
     background-color: var(--color-accent);
     margin-top: 0.5rem;
+}
+
+.about-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--color-accent);
+}
+
+#members {
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('img/members-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* CZŁONKOWIE ZESPOŁU */
@@ -191,7 +208,7 @@ section h2::after {
     font-size: 0.95rem;
 }
 
-/* ===== TABELA DYSKOGRAFII ===== */
+/* TABELA DYSKOGRAFII */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -231,7 +248,7 @@ tbody td:first-child {
     font-size: 1.1rem;
 }
 
-/* SEKCJA CIEKAWOSTEK */
+/* SEKCJA INFORMACJI O ZESPOLE */
 #trivia-container {
     background-color: var(--color-surface);
     border-left: 4px solid var(--color-accent);
@@ -367,6 +384,7 @@ footer p i {
     transform: translateY(-4px);
 }
 
+/* MEDIA QUERIES — TABLET */
 @media (max-width: 768px) {
 
     nav ul {
@@ -380,7 +398,7 @@ footer p i {
     }
 
     .hero h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .hero .tagline {
@@ -397,7 +415,7 @@ footer p i {
     }
 }
 
-
+/* MEDIA QUERIES — TELEFON */
 @media (max-width: 480px) {
 
     nav ul {
@@ -411,7 +429,7 @@ footer p i {
     }
 
     .hero h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .hero .tagline {
