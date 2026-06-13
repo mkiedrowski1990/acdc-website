@@ -4,7 +4,7 @@
 Strona fanowska zespołu AC/DC stworzona jako projekt zaliczeniowy
 z przedmiotu Projektowanie Stron WWW.
 Strona prezentuje historię zespołu, członków, dyskografię oraz
-losowe cytaty z zewnętrznego API.
+funkcjonalności z zewnętrznego API.
 
 ## Technologie
 - HTML5 (znaczniki semantyczne)
